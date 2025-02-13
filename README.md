@@ -1,0 +1,1 @@
+Basic calculator using ReactJS, CSS with Vite.

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+button{
+    border: none;
+    outline: none;
+    appearance: none;
+    background: transparent;
+    color: inherit;
+}
+
+body{
+    background-color: #0f0f0f;
+    color: white;
+    background-image: linear-gradient(#161616 1px, transparent 1px), linear-gradient(90deg, #161616 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.App{
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.developer span{
+    font-weight: 600;
+    color: #f50057;
+
+}
+
+.calculator{
+    border: 3px solid #f50057;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.display{
+    background-color: rgb(20, 20, 5);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 1rem;
+    height: 120px;
+    flex-direction: column;
+}
+
+.display .expression{
+    overflow-x: auto;
+    width: 100%;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    scrollbar-width: none;
+}
+
+.display .result{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.keys{
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.keys button{
+    padding: 0.8rem 1.2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.keys button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sci-keys{
+    width: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.line{
+    margin-block: 1.5rem;
+    width: 4px;
+    background-color: rgba(255, 255, 255, 0.09);
+}
+
+.num-keys{
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.op-keys{
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
