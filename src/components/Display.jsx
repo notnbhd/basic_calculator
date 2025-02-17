@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Display = () => {
+const Display = ({expression, result}) => {
     return (
         <div className = 'display'>
-            <p className='expression'>180+15/20</p>
-            <p className='result'>RESULT</p>
+            <p className='expression'>{expression}</p>
+            <p className='result'>{result}</p>
         </div>
-    )
-}
+    );
+};
 
 export default Display;
